@@ -7,7 +7,7 @@ import { AuthCredentialDto } from './dto/auth-credential.dto';
 @Injectable()
 export class AuthService {
   constructor(
-    @InjectRepository(User)
+    @InjectRepository(UserRepository)
     private userRepository: UserRepository
   ) {}
 
